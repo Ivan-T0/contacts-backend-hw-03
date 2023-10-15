@@ -1,7 +1,7 @@
 const app = require('./app')
-const {BD_HOST} = process.env
-const mongoose = require("mongoose");
 
+const mongoose = require("mongoose");
+const {BD_HOST} = process.env
 
 mongoose.connect(BD_HOST).then(() => {
   app.listen(3000)
